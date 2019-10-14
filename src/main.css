@@ -22,7 +22,7 @@
     flex-direction: column;
 }
 
-.event-container{
+.event-container {
     margin-bottom: 10px;
 }
 
@@ -34,4 +34,26 @@
 
 .event-date-key-label {
     font-weight: bold;
+}
+
+.ant-card {
+    width: 1000px;
+}
+
+@media screen and (max-width: 1920px) {
+    .ant-card {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ant-card {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .ant-card {
+        width: 300px;
+    }
 }
