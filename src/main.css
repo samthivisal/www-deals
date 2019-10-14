@@ -27,6 +27,11 @@
 }
 
 .event-parameters {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.event-date-key-label {
+    font-weight: bold;
 }
