@@ -1,0 +1,32 @@
+.main-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pub {
+    width: 10%;
+}
+
+.event-width-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 11px;
+    margin: 10px 0;
+}
+
+.events-container {
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-container{
+    margin-bottom: 10px;
+}
+
+.event-parameters {
+    display: flex;
+    flex-direction: column;
+}
