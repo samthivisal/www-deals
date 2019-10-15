@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
+import AppConfig from '../configuration/appConfig';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -39,7 +40,7 @@ export default function ButtonAppBar() {
             <img className={classes.imageIcon} src="../logo.png"/>
           </Icon>
           <Typography variant="h6" className={classes.title}>
-            WWW-EVENTS
+            {AppConfig.title}
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
