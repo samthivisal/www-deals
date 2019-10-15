@@ -2,11 +2,13 @@ import React from 'react';
 import { Card } from 'antd';
 import { Link } from 'react-router-dom';
 import EventDate from './eventDate';
+import moment from 'moment';
+import { labelFormat } from '../configuration/labelFormat';
 
 const { Meta } = Card;
 
 const Event = (props) => {
-  const { id, name, description, user, isModerated, startedDate, endedDate } = props.event;
+  const { id, name, description, postedUser, postedDate, isModerated, startedDate, endedDate } = props.event;
 
   return (
     <div className='event-container'>
@@ -25,7 +27,7 @@ const Event = (props) => {
               startedDate={startedDate}
               endedDate={endedDate}
             />
-            <i>{`Posted by ${user}`}</i>
+            <i>{`Posted by ${postedUser} at ${moment(postedDate).format(labelFormat.date)}`}</i>
           </div>
         </Card>
       </Link>

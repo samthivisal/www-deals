@@ -33,7 +33,7 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ background: '#2E3B55' }}>
+      <AppBar position="fixed" style={{ background: '#2E3B55' }}>
         <Toolbar>
           <Icon classes={{root: classes.iconRoot}}>
             <img className={classes.imageIcon} src="../logo.png"/>
